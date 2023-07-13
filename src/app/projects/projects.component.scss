@@ -1,0 +1,212 @@
+$color_1: #000000;
+$color_2: greenyellow;
+$background-color_1: white;
+$background-color_2: rgb(203, 203, 203);
+
+/* ------------------- About ------------------- */
+/* .service h1,p {
+    text-align: left;
+} */
+/* MEDIA QUERIES */
+/* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
+/* FOR 1024 */
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 916px et 1024px */
+/* FOR 768-1024 */
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 916px et 1024px */
+/* FOR 912-1024 */
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 916px et 1024px */
+/* .header h1{
+        padding: 2px;
+        border: 2px solid;
+        margin-right: 20px;
+        margin-left: 30px;
+        font-size: larger;
+    
+    }
+    
+    .menu li {
+        padding: 4px;
+        font-size: 30px;
+        
+    } */
+/* .service {
+        margin: 20px;
+    } */
+.header {
+	display: flex;
+	flex-direction: row;
+	border-bottom: 3px solid;
+	position: fixed;
+	background-color: $background-color_1;
+	width: 100%;
+	top: 0;
+	h1 {
+		padding: 10px;
+		border: 4px solid;
+		margin-right: 470px;
+		margin-left: 150px;
+	}
+}
+.menu {
+	li {
+		width: auto;
+		display: inline-block;
+		padding: 10px;
+		font-size: 20px;
+	}
+	a {
+		color: $color_1;
+		text-decoration: none;
+	}
+}
+.services_li {
+	border-bottom: 2px solid greenyellow;
+	color: $color_2;
+}
+section {
+	h1 {
+		&:first-child {
+			margin-top: 15%;
+			border-bottom: 2px solid greenyellow;
+			width: 100px;
+			margin-left: 50%;
+			text-align: center;
+		}
+	}
+}
+.services {
+	display: flex;
+	flex-direction: row;
+}
+.service {
+	margin: 50px;
+	text-align: center;
+	img {
+		border-radius: 100px;
+		width: 100px;
+	}
+}
+footer {
+	height: 200px;
+	background-color: $background-color_2;
+	position: absolute;
+	width: 100%;
+	margin-top: 30%;
+	text-align: center;
+	li {
+		list-style-type: none;
+	}
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+@media screen and (max-width: 915px) {
+	.header {
+		h1 {
+			padding: 1px;
+			border: 1px solid;
+			margin-right: 5px;
+			margin-left: 10px;
+			font-size: medium;
+		}
+	}
+	.menu {
+		li {
+			padding: 2px;
+			font-size: 12px;
+		}
+	}
+	section {
+		h1 {
+			&:first-child {
+				margin-top: 20%;
+				border-bottom: 2px solid greenyellow;
+				width: 100px;
+				margin-left: 35%;
+				text-align: center;
+			}
+		}
+	}
+	.service {
+		margin: 10px;
+	}
+}
+@media screen and (min-width: 820px) and (max-width: 1024px) {
+	.header {
+		h1 {
+			padding: 2px;
+			border: 2px solid;
+			margin-right: 20px;
+			margin-left: 30px;
+			font-size: larger;
+		}
+	}
+	.menu {
+		li {
+			padding: 4px;
+			font-size: 30px;
+		}
+	}
+	section {
+		h1 {
+			&:first-child {
+				margin-top: 20%;
+				border-bottom: 2px solid greenyellow;
+				width: 200px;
+				margin-left: 36%;
+				text-align: center;
+			}
+		}
+	}
+	.service {
+		margin: 20px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.header {
+		h1 {
+			padding: 2px;
+			border: 2px solid;
+			margin-right: 20px;
+			margin-left: 30px;
+			font-size: larger;
+		}
+	}
+	.menu {
+		li {
+			padding: 4px;
+			font-size: 30px;
+		}
+	}
+	section {
+		h1 {
+			&:first-child {
+				margin-top: 20%;
+				border-bottom: 2px solid greenyellow;
+				width: 200px;
+				margin-left: 36%;
+				text-align: center;
+			}
+		}
+	}
+	.service {
+		margin: 20px;
+	}
+}
+@media screen and (min-width: 912px) and (max-width: 1368px) {
+	section {
+		h1 {
+			&:first-child {
+				margin-top: 20%;
+				border-bottom: 2px solid greenyellow;
+				width: 200px;
+				margin-left: 36%;
+				text-align: center;
+			}
+		}
+	}
+	footer {
+		margin-top: 40%;
+	}
+}
