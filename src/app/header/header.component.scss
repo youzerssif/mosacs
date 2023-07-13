@@ -1,0 +1,93 @@
+$color_1: white;
+$color_2: #000000;
+$background-color_1: #C8E515;
+
+/* ------------------- HOME ------------------- */
+/* MEDIA QUERIES */
+/* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
+/* FOR 1024 */
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 916px et 1024px */
+/* @media all and (min-width: 916px) and (max-width: 1024px){} */
+.header {
+	display: flex;
+	flex-direction: row;
+	h1 {
+		padding: 10px;
+		color: $color_1;
+		border: 4px solid;
+		margin-right: 470px;
+	}
+}
+.menu {
+	li {
+		color: $color_1;
+		width: auto;
+		display: inline-block;
+		padding: 10px;
+		font-size: 20px;
+		&:first-child {
+			border-bottom: 2px solid white;
+		}
+	}
+	a {
+		color: $color_2;
+		text-decoration: none;
+	}
+}
+.welcome {
+	text-align: center;
+	margin: 25%;
+	margin-top: 15%;
+	font-size: 25px;
+	color: $color_1;
+}
+.btn_welcome {
+	background-color: $background-color_1;
+	border-radius: 10px;
+	color: $color_1;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	a {
+		&:link {
+			text-decoration: none;
+		}
+	}
+}
+@media screen and (max-width: 915px) {
+	.header {
+		h1 {
+			padding: 1px;
+			border: 1px solid;
+			margin-right: 5px;
+			margin-left: 10px;
+			font-size: medium;
+		}
+	}
+	.menu {
+		li {
+			padding: 1px;
+			font-size: 12px;
+		}
+	}
+	body {
+		padding-top: 40px;
+		padding-left: 10px;
+		background-image: url("/assets/img/portfolio_img.webp");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.welcome {
+		padding-top: 80px;
+		font-size: 15px;
+	}
+	.btn_welcome {
+		border-radius: 10px;
+		color: $color_1;
+		padding: 10px 20px;
+		font-size: 12px;
+	}
+}
